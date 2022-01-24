@@ -1,0 +1,16 @@
+{
+    "name": "com.gameloops.savesystem.Samples",
+    "rootNamespace": "",
+    "references": [
+        "GUID:ab38774fa4165ae49bc92fda7ba6ac81"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}

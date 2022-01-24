@@ -1,0 +1,13 @@
+{
+  "name": "com.rakib.savesystem",
+  "version": "1.0.0",
+  "displayName": "Simple Save System",
+  "description": "A simple save system that saves data using JSON. It was made with the use cases of Arcade Idle games in mind",
+  "documentationUrl": "https://docs.google.com/document/d/1iPsvn8JHwDn8UdymtPzRqSkPt1IFxyT7ulKsK_MtpSI/edit",
+  "author": 
+  { 
+    "name" : "Rakib Jahan",
+    "email" : "rakibj56@gmail.com",
+    "url" : "https://www.linkedin.com/in/rakibjahan/"
+  }
+}
