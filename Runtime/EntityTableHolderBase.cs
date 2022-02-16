@@ -26,7 +26,7 @@ namespace SaveSystem.Core
         public void LoadOrSaveDefault()
         {
             GetReferences();
-            currentEntityTable = Saver.LoadEntityDatabase<T>(GetUniqueId(), GetEntityTable());
+            currentEntityTable = Saver.LoadEntityDatabase<T>(GetUniqueId(), GetDefaultEntityTable());
             SetEntityTable(currentEntityTable);
         }
 
@@ -57,6 +57,16 @@ namespace SaveSystem.Core
             var entities = new List<T>();
             foreach (var entityHolder in _entityHolders)
                 entities.Add(entityHolder.GetEntity());
+            var entityTable = new EntityTable<T>(GetUniqueId(), entities);
+
+            return entityTable;
+        }
+        
+        protected virtual EntityTable<T> GetDefaultEntityTable()
+        {
+            var entities = new List<T>();
+            foreach (var entityHolder in _entityHolders)
+                entities.Add(entityHolder.GetDefaultEntity());
             var entityTable = new EntityTable<T>(GetUniqueId(), entities);
 
             return entityTable;

@@ -13,7 +13,7 @@ namespace SaveSystem.Core
         public Action OnInitialize;
         public Action OnSave;
 
-        private void Awake()
+        private void Start()
         {
             _fileSystem = new FileSystem();
             OnInitialize?.Invoke();

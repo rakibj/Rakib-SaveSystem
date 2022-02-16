@@ -31,6 +31,11 @@ namespace SaveSystem.Test
             return currencyEntity;
         }
 
+        public CurrencyEntity GetDefaultEntity()
+        {
+            return GetEntity();
+        }
+
         public void SetEntity(CurrencyEntity entity)
         {
             iconImg.color = entity.iconColor;
